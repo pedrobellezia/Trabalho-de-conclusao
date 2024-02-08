@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Homepage{% endblock  %}
+{% block head %}
+
+{% endblock  %}
+
+{% block content %}
+
+    <div class="div-margin d-flex justify-content-between">
+        <h2 style="display: inline;">Destinos recomendados</h2>
+        <span style="display: inline-block; margin-left: 10px;">Ver mais<i class="bi bi-arrow-right"></i></span>
+    </div>
+    <div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 ">
+            <div class="col">
+                <div class="card h-100" style="border-radius: 20px; background-color:  #F8F8F8;"> <!--Somente foi possível modificar o border-radius diretamente na tag-->
+                    <img src= "{% static 'base/img/paris.jpg' %}" class="card-img-top custom-img" style="border-radius: 20px; " alt="..."> <!--Somente foi possível modificar o border-radius diretamente na tag-->
+                    <div class="card-body custom-border" style="height: 11em;">
+                        <h5 class="card-title d-flex justify-content-between " style="color: #122A3E;">Paris <i class="bi bi-heart favorite-icon-recommended"></i></h5>
+                        <p class="card-text mb-0">Duração:</p>
+                        <p class="card-text">7 dias e 6 noites</p>
+                        <p class="card-text">A partir de: R$000,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="border-radius: 20px; background-color:  #F8F8F8;"> <!--Somente foi possível modificar o border-radius diretamente na tag-->
+                    <img src= "{% static 'base/img/veneza.jpg' %}" class="card-img-top custom-img" style="border-radius: 20px;" alt="..."> <!--Somente foi possível modificar o border-radius diretamente na tag-->
+                    <div class="card-body custom-border">
+                        <h5 class="card-title d-flex justify-content-between" style="color: #122A3E;">Veneza<i class="bi bi-heart favorite-icon-recommended"></i></h5>
+                        <p class="card-text mb-0">Duração:</p>
+                        <p class="card-text">10 dias e 9 noites</p>
+                        <p class="card-text">A partir de: R$000,00</p>                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="border-radius: 20px; background-color:  #F8F8F8;"> <!--Somente foi possível modificar o border-radius diretamente na tag-->
+                    <img src= "{% static 'base/img/peru.jpg' %}" class="card-img-top custom-img" style="border-radius: 20px" alt="..."> <!--Somente foi possível modificar o border-radius diretamente na tag-->
+                    <div class="card-body custom-border">
+                        <h5 class="card-title d-flex justify-content-between " style="color: #122A3E;">Machu Pichu<i class="bi bi-heart favorite-icon-recommended"></i></h5>
+                        <p class="card-text mb-0">Duração:</p>
+                        <p class="card-text">5 dias e 4 noites</p>
+                        <p class="card-text">A partir de: R$000,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Explorar pacotes -->
+    <div class="div-margin d-flex justify-content-between">
+        <h2 style="display: inline;">Explorar nossos pacotes</h2>
+        <span style="display: inline-block; margin-left: 10px;">Ver mais<i class="bi bi-arrow-right"></i></span>
+    </div>
+    <div class="card mb-4" style="border-radius: 20px;">
+        <div class="row g-0 custom-background custom-border">
+            <div class="col-md-6">
+                <img src= "{% static 'base/img/recife.jpg' %}" class="img-fluid  img-fluid-custom" style=" height: 20em" alt="..."><!--A altura da imagem só foi possível alterar diretamente pela tag-->
+            </div>
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h3 class="card-title d-flex justify-content-between" style="color: #122A3E;">Recife<i class="bi bi-heart favorite-icon-package"></i></h3>
+                    <div>Histórica</div>
+                    <p class="card-text">5 dias e 4 noites</p>
+                    <p>A partir de: R$000,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4" style="border-radius: 20px;">
+        <div class="row g-0 custom-background custom-border">
+            <div class="col-md-6">
+                <img src="{% static 'base/img/santorini.jpg' %}" class="img-fluid img-fluid-custom" style="height: 20em;" alt="..."> <!--A altura da imagem só foi possível alterar diretamente pela tag-->
+            </div>
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h3 class="card-title d-flex justify-content-between" style="color: #122A3E;">Santorini<i class="bi bi-heart favorite-icon-package"></i></h3>
+                    <div>Romântica</div>
+                    <p class="card-text">5 dias e 4 noites</p>
+                    <p>A partir de: R$000,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-5" style="border-radius: 20px;">
+        <div class="row g-0 custom-background custom-border">
+            <div class="col-md-6">
+                <img src="{% static 'base/img/veneza.jpg' %}" class="img-fluid img-fluid-custom" style="height: 20em;" alt="..."><!--A altura da imagem só foi possível alterar diretamente pela tag-->
+            </div>
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h3 class="card-title d-flex justify-content-between" style="color: #122A3E;">Bariloche<i class="bi bi-heart favorite-icon-package"></i></h3>
+                    <div>Inverno</div>
+                    <p class="card-text">5 dias e 4 noites</p>
+                    <p>A partir de: R$000,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock  %}
