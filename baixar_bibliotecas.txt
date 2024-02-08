@@ -1,0 +1,8 @@
+- Para baixar as bibliotecas que estão no arquivo "requirements.txt" digitar no terminal o comando:
+
+pip install -r requirements.txt
+
+
+- Para atualizar o arquivo "requirements.txt" com as bibliotecas instaladas no venv, digitar no terminal o comando:
+
+pip freeze > requirements.txt
