@@ -1,0 +1,215 @@
+/* Importando a fonte utilizada */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /* css roteiro */
+
+  .container {
+    background-color:#F8F8F8;
+    width: 100%;
+    height: 680px;
+  }
+
+  .imagens {
+    padding-top: 100px;
+    padding-left: 60px;
+    width: 655px;
+    height: 665px;
+  }
+
+  .img1 {
+    align-items: left;
+    width: 586px;
+    height: 331px;
+  }
+
+  .img2 {
+    align-items: left;
+    padding-top: 20px;
+    padding-inline: px;
+    width: 280px;
+    height: 200px;
+  }
+
+  .img3 {
+    align-items: left;
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 280px;
+    height: 200px;
+  }
+
+  .roteiro {
+    margin-top: -550px;
+    margin-left: 700px;
+    margin-right: 60px;
+  }
+
+  .titulo h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #132A3E;
+  }
+
+  .titulo p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #797979;
+  }
+
+  .sobre {
+    padding-top: 40px;
+  }
+
+  .sobre h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #132A3E;
+  }
+
+  .sobre p {
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #343434;
+  }
+
+  .valor-duracao {
+    padding-top: 40px;
+    display: inline-block;
+  }
+
+  .valor {
+    display: inline-block;
+  }
+
+  .duracao {
+    display: inline-block;
+    padding-left: 40px;
+  }
+
+  .valor-duracao h5 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #797979;
+  }
+
+  .valor-duracao h5 i {
+    padding-right: 5px;
+  }
+
+  .valor-duracao h4 {
+    font-weight: 600;
+    font-size: 15px;
+    color: #343434;
+  }
+
+ button {
+    display: block;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 300;
+    color: #F8F8F8;
+    background-color: #F56A0D;
+  }
+
+  .compartilhe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .compartilhe h2 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #132A3E;
+  }
+
+  .compartilhe p {
+    padding: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #797979;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    justify-content: space-between;
+  }
+
+  .bloco {
+    padding-top: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #F8F8F8;
+    border-radius: 50px;
+    box-shadow: 0px 1px 5px rgb(80, 80, 80);
+  }
+
+  .reviews h2 {
+    font-family: serif;
+    color: #F56A0D;
+    font-size: 60px;
+    padding-left: 20px;
+  }
+
+  .reviews p {
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .bloco .overlay {
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #F56A0D;
+    position: relative;
+    bottom: -17%;
+  }
+
+  .reviews img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+  }
+
+  .reviews h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #F8F8F8;
+  }
+
+  .reviews h5 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #F8F8F8;
+  }
