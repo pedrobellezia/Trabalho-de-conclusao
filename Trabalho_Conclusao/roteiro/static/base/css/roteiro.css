@@ -19,8 +19,6 @@
     text-decoration: none;
   }
 
-  /* css roteiro */
-
   .container {
     background-color:#F8F8F8;
     width: 100%;
@@ -167,6 +165,8 @@
     background-color: #F8F8F8;
     border-radius: 50px;
     box-shadow: 0px 1px 5px rgb(80, 80, 80);
+    display: flex;
+    flex-direction: column;
   }
 
   .reviews h2 {
@@ -194,21 +194,24 @@
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background-color: #F56A0D;
-    position: relative;
-    bottom: -17%;
+    margin-top: auto;
   }
 
   .reviews img {
     width: 100px;
     height: 100px;
     display: flex;
-    margin: auto;
+    position: relative;
+    transform: translateY(
+      -50%
+    );
   }
 
   .reviews h4 {
     font-weight: 500;
     font-size: 20px;
     color: #F8F8F8;
+    margin-top: -10%;
   }
 
   .reviews h5 {
