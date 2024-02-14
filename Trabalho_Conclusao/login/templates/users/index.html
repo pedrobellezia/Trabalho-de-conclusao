@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Usuários
+{% endblock %}
+{% block head %}
+
+{% endblock %}
+{% block content %}
+
+    <h2 class="mb-3">Usuários</h2>
+{% comment %} 
+
+LINK PARA INCLUIR NA PÁGINA DE LOGIN PARA CRIAR UMA CONTA
+    <a href="{% url "users:create" %}"
+    title="Criar uma conta"
+    >Crie uma nova conta</a> 
+{% endcomment %}
+
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Username</th>
+                <th>Ativo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.first_name }} {{ user.last_name}}</td>
+                <td>{{ username }}</td>
+                <td>
+                    <input {% if user.enable  %}checked{% endif %} type="checkbox" class="form-check-input">
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
