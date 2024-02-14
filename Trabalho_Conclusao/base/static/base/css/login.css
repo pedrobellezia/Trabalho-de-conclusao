@@ -1,0 +1,34 @@
+/* Importando a fonte utilizada para a logo */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.title_pagina {
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Lalezar", system-ui;
+    font-style: normal;
+    color: white;
+    font-size: 80px;
+    text-shadow: 3px 2.5px #A4A4A4;
+    margin-bottom: 0;
+}
+
+body {
+    background-image: url('../img/login.jpg');
+    background-size: 100%;
+}
+
+.link {
+    text-decoration: none;
+    align-content: center;
+    color: black;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1.5px 1.2px #A4A4A4;
+}
+

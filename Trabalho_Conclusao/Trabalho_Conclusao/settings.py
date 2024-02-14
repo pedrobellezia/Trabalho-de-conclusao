@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'registro.apps.RegistroConfig',
     'roteiro.apps.RoteiroConfig',
     'crispy_forms',
+    'crispy_bootstrap5',
+    
 ]
 
 MIDDLEWARE = [
