@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from django.contrib import messages, auth
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
@@ -67,3 +68,13 @@ def login(request):
     }
     
     return render(request, "users/login.html", context)
+=======
+from django.shortcuts import render
+from django.contrib.auth.models import User
+
+def create(request):
+    return render(request, "users/create.html")
+
+def login(request):
+    return render(request, "users/login.html")
+>>>>>>> Stashed changes

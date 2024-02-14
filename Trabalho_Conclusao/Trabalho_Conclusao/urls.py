@@ -20,5 +20,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('homepage/', include('homepage.urls')),
+<<<<<<< Updated upstream
     path('', include('login.urls')),
+=======
+    path('', include('users.urls')),
+>>>>>>> Stashed changes
 ]

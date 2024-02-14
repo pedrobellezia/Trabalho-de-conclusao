@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+<<<<<<< Updated upstream
 # from django.views.generic import RedirectView
 
 # # from users.views.user_management import UserListView, UserUpdateView, UserCreateView, UserDeleteView, UserSearchView
@@ -19,5 +20,12 @@ urlpatterns = [
     path("usuarios/", views.index, name="index"),
     path("usuarios/cadastro/", views.create, name="create"),
     path("login/", views.login, name="login"),
+=======
+
+app_name= "users"
+urlpatterns = [
+    path("cadastro/". views.create, name="create"),
+    path("/login". views.login, name="login"),
+>>>>>>> Stashed changes
 ]
 
