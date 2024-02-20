@@ -1,0 +1,93 @@
+div>a>img {
+    filter: brightness(0.4);
+    width: 28.125rem;
+    margin-top: .3125rem;
+    margin-bottom: .3125rem;
+    margin-right: .625rem;
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: white;
+    width: 75%;
+}
+
+#card {
+    border: none;
+    border: 3.125rem;
+    width: 100%;
+}
+
+.card-title {
+    color: white;
+    padding-left: .3125rem;
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-top: -1rem;
+    border: .1875rem solid white;
+    /* Borda branca com 3 pixels de espessura */
+}
+
+a {
+    text-decoration: none;
+}
+
+.trips {
+    display: flex;
+    justify-content: space-between;
+    margin-left: .5rem;
+    margin-right: .3125rem;
+    color: #F56A0D;
+}
+
+.cardfavtrip {
+    width: 18rem;
+    border-bottom: .1875rem solid rgba(0, 0, 0, 0.2);
+    margin-left: .625rem;
+}
+
+/* Media query para dispositivos com largura máxima de 768 pixels (ajuste conforme necessário) */
+@media (max-width: 768px) {
+
+    .visitedtrip,
+    favtrip {
+        flex-direction: column;
+        /* Altera a direção do flex para coluna */
+        align-items: center;
+        /* Centraliza itens na coluna */
+    }
+
+    #cardtrip {
+        width: 75%;
+    }
+
+    .card-title {
+        color: white;
+
+    }
+
+    #cards {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 900px) {
+    
+    .cardfavtrip{
+        margin: 10px;
+    }
+
+    #cardtrip {
+
+        width: 450px;
+        height: 281.59px;
+
+    }
+}
